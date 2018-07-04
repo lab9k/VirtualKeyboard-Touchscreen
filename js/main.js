@@ -1,4 +1,4 @@
-const jQueryUrl = "http://code.jquery.com/jquery-1.11.0.min.js";
+const jQueryUrl = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 const keyboardStylesheet = "/css/jquery.ml-keyboard.css";
 /*const keyboardScriptUrl = "/js/jquery.ml-keyboard.min.js"*/
 
