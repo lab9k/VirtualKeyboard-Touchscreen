@@ -1,5 +1,5 @@
 const jQueryUrl = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
-const keyboardStylesheet = "https://cdn.rawgit.com/lab9k/VirtualKeyboard-Touchscreen/5caaec0c/css/jquery.ml-keyboard.css";
+const keyboardStylesheet = "https://rawgit.com/lab9k/VirtualKeyboard-Touchscreen/master/css/jquery.ml-keyboard.css";
 
 /* Inladen van JQuery, benodigd voor andere scripts */
 window.onload = function () {
