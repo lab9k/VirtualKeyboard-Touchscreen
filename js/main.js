@@ -359,10 +359,6 @@ function initialize() {
         layouts: {}
     };
 
-
-
-
-
     /* Keyboard css inladen */
     $('head').append(`<link rel="stylesheet" type="text/css" href="${keyboardStylesheet}">`);
 
@@ -372,24 +368,4 @@ function initialize() {
         trigger: '#closebutton' /* Trigger niet nodig, demonstratie enkel */
     });
 
-
-
-    /*$.getScript(keyboardScriptUrl, function () {
-
-
-    });*/
-
-
-    /* Benodigde script inladen in document
-    $.getScript(keyboardScriptUrl,
-        function () {
-            /*Keyboard activeren op mogelijke inputtypes
-     
-
-        }) */
-
-
 }
-
-
-/*! jquery.ml-keyboard (http://mbut.github.io/jquery.mlkeyboard/) 2016-08-30 */
