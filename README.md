@@ -1,2 +1,2 @@
 # VirtualKeyboard-Touchscreen
-JQuery keyboard 
+Demo voor virtueel keyboard geschikt voor toetsenborden webpagina.
