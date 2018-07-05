@@ -81,7 +81,10 @@ function initialize() {
         }, KeyDelete.prototype = new Key, KeyDelete.prototype.constructor = KeyDelete, KeyDelete.prototype.defaultClickAction = function () {
             this.keyboard.deleteChar()
         }, KeyTab.prototype = new Key, KeyTab.prototype.constructor = KeyTab, KeyTab.prototype.defaultClickAction = function () {
-            this.keyboard.hideKeyboard(), $(":input").eq($(":input").index(this.keyboard.$current_input) + 1).focus()
+            let waarde = this.keyboard.$current_input.val();
+            waarde += "\t";
+            this.keyboard.$current_input.val(waarde);
+            this.keyboard.$current_input.focus();
         }, KeyCapsLock.prototype = new Key, KeyCapsLock.prototype.constructor = KeyCapsLock, KeyCapsLock.prototype.isActive = function () {
             return this.keyboard.active_caps
         }, KeyCapsLock.prototype.defaultClickAction = function () {
@@ -91,7 +94,13 @@ function initialize() {
                 which: 13,
                 keyCode: 13
             });
-            this.keyboard.$current_input.trigger(e)
+            this.keyboard.$current_input.trigger(e);
+
+            /* Own code */
+
+
+
+
         }, KeyShift.prototype = new Key, KeyShift.prototype.constructor = KeyShift, KeyShift.prototype.isActive = function () {
             return this.keyboard.active_shift
         }, KeyShift.prototype.defaultClickAction = function () {
@@ -364,8 +373,8 @@ function initialize() {
 
     $('input').mlKeyboard({
         layout: 'en_US',
-        enabled: true,
-        trigger: '#closebutton' /* Trigger niet nodig, demonstratie enkel */
+        enabled: true
+            /* Trigger niet nodig, demonstratie enkel */
     });
 
 }
