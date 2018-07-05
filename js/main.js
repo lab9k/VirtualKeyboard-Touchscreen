@@ -1,8 +1,11 @@
-const jQueryUrl = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
-const keyboardStylesheet = "https://rawgit.com/lab9k/VirtualKeyboard-Touchscreen/master/css/jquery.ml-keyboard.css";
+/*const jQueryUrl = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+const keyboardStylesheet = "https://rawgit.com/lab9k/VirtualKeyboard-Touchscreen/master/css/jquery.ml-keyboard.css";*/
 
 /* Inladen van JQuery, benodigd voor andere scripts */
-window.onload = function () {
+
+document.body.style = 'display: none;';
+
+/*window.onload = function () {
         alert('Test');
         var script = document.createElement("script");
         script.src = jQueryUrl;
@@ -14,7 +17,7 @@ window.onload = function () {
         document.head.appendChild(script);
     }
     /* Keyboard initialisatie en inladen stylesheet */
-function initialize() {
+/*function initialize() {
     ! function ($) {
 
         function Key(params) {
@@ -365,13 +368,14 @@ function initialize() {
         layouts: {}
     };
 
-    /* Keyboard css inladen */
+    /* Keyboard css inladen 
     $('head').append(`<link rel="stylesheet" type="text/css" href="${keyboardStylesheet}">`);
 
     $('input').mlKeyboard({
         layout: 'en_US',
         enabled: true
-            /* Trigger niet nodig, demonstratie enkel */
+            /* Trigger niet nodig, demonstratie enkel 
     });
 
 }
+*/
