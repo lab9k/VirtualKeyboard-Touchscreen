@@ -7,6 +7,7 @@ window.onload = function () {
         script.src = jQueryUrl;
         script.type = 'text/javascript';
         script.onload = function () {
+            alert('Test');
             initialize();
         }
         document.head.appendChild(script);
@@ -95,11 +96,6 @@ function initialize() {
                 keyCode: 13
             });
             this.keyboard.$current_input.trigger(e);
-
-            /* Own code */
-
-
-
 
         }, KeyShift.prototype = new Key, KeyShift.prototype.constructor = KeyShift, KeyShift.prototype.isActive = function () {
             return this.keyboard.active_shift
