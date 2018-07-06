@@ -14,6 +14,7 @@ const keyboardStylesheet = "https://rawgit.com/lab9k/VirtualKeyboard-Touchscreen
         document.head.appendChild(script);
     }
     /* Keyboard initialisatie en inladen stylesheet */
+alert('keyboard loaded!);
 
 ! function ($) {
 
