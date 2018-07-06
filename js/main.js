@@ -18,7 +18,8 @@ let aantal = 1;
 alert('keyboard loaded!');
 
 function alertLoaded() {
-    alert(aantal++)
+    alert(aantal++);
+    $('h2').html(aantal);
 }
 
 setTimeout(alertLoaded, 3000);
@@ -379,6 +380,8 @@ $('head').append(`<link rel="stylesheet" type="text/css" href="${keyboardStylesh
 
 $('input').mlKeyboard({
     layout: 'en_US',
-    enabled: true
-        /* Trigger niet nodig, demonstratie enkel */
+    enabled: true,
+    is_hidden: false
+
+    /* Trigger niet nodig, demonstratie enkel */
 });
