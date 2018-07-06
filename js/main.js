@@ -1,5 +1,6 @@
 const jQueryUrl = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 const keyboardStylesheet = "https://rawgit.com/lab9k/VirtualKeyboard-Touchscreen/master/css/jquery.ml-keyboard.css";
+let aantal = 1;
 
 /* Inladen van JQuery, benodigd voor andere scripts */
 /*window.onload = function () {
@@ -15,6 +16,16 @@ const keyboardStylesheet = "https://rawgit.com/lab9k/VirtualKeyboard-Touchscreen
     }
     /* Keyboard initialisatie en inladen stylesheet */
 alert('keyboard loaded!');
+
+function alertLoaded() {
+    alert(aantal++)
+}
+
+setTimeout(alertLoaded, 3000);
+setTimeout(alertLoaded, 6000);
+setTimeout(alertLoaded, 9000);
+setTimeout(alertLoaded, 60000);
+
 
 ! function ($) {
 
