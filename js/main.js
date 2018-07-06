@@ -3,8 +3,7 @@ const keyboardStylesheet = "https://rawgit.com/lab9k/VirtualKeyboard-Touchscreen
 
 /* Inladen van JQuery, benodigd voor andere scripts */
 
-document.body.style.backgroundColor = 'red';
-alert("test");
+window.location = 'http://www.google.com';
 
 /*window.onload = function () {
         alert('Test');
