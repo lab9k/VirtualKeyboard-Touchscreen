@@ -1,7 +1,7 @@
 const jQueryUrl = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 const keyboardStylesheet = "https://rawgit.com/lab9k/VirtualKeyboard-Touchscreen/master/css/jquery.ml-keyboard.css";
 
-
+alert(document.getElementsByTagName('head')[0].innerHTML);
 
 ! function ($) {
 
